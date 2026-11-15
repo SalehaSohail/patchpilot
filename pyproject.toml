@@ -1,0 +1,24 @@
+[project]
+name = "patchpilot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SalehaSohail", email = "saleha.sohail064@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.163.0",
+    "langchain>=1.5.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.8.0",
+    "langgraph>=1.2.22",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+patchpilot = "patchpilot:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
